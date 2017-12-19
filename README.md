@@ -17,5 +17,12 @@
     The software receives the value of the purchase of Bitcoin in real and the value of bitcoin at the time of purchase. So by applying the rule of three simple ones we will obtain the approximate value of their gain.
 </p>
 
+
+<h2>Example 3</h2>
+<p align="center">
+    Use on smartphone
+    <img src="https://github.com/WalderlanSena/pymonicoin/blob/master/pymonicoinSmartfone.jpg">
+</p>
+
 ## License
 <b>PyMonicoin</b> is open source software licensed under the <b>MIT license.</b>
