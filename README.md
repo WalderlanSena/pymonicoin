@@ -1,4 +1,4 @@
-<h1 align="center">Pymonicoin</h1>
+<h1 align="center">฿ Pymonicoin ฿</h1>
 <p align="center">
     <img src="https://github.com/WalderlanSena/tagsGit/blob/master/pymonicoin.svg">
     <img src="https://github.com/WalderlanSena/tagsGit/blob/master/licenseMIT.svg">
