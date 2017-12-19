@@ -1,4 +1,8 @@
 <h1 align="center">Pymonicoin</h1>
+<p align="center">
+    <img src="https://github.com/WalderlanSena/tagsGit/blob/master/pymonicoin.svg">
+    <img src="https://github.com/WalderlanSena/tagsGit/blob/master/licenseMIT.svg">
+</p>
 
 <h2>Example 1</h2>
 <p align="center">
