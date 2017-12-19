@@ -18,4 +18,4 @@
 </p>
 
 ## License
-O <b>PyMonicoin</b> é um software de código aberto licenciado sob a licença <b>MIT license.</b>
+<b>PyMonicoin</b> is open source software licensed under the <b>MIT license.</b>
