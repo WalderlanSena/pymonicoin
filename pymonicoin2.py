@@ -12,11 +12,6 @@ from datetime import datetime
 EXCHANGE  = "FOX"
 BTC_PRICE = "last"
 
-# Valor do bitcoin depositado em real
-bitcoinDepositado = float('254.0')
-# Valor do bitcoin no momento do deposito anterior
-bitcoinInit       = float('68.998')
-
 # Função que realiza a requisição
 def search():
     # Realiza a requisicao para a api que retorna o json com o valor do bitcoin atualmente
@@ -25,11 +20,7 @@ def search():
         data = json.loads(url.read().decode())
         # Recebe o valor do bitcoin atualmente
         bitcoinCurrent = data["ticker_24h"]["exchanges"][EXCHANGE][BTC_PRICE]
-        # Recebe a multiplicacao do valor do bitcoin atualmente * o valor do bitcoin depositado
-        bitCalcTemp    = float(bitcoinCurrent*bitcoinDepositado)
-        # Recebe valor final da divisao do resultado da multiplicacao * o valor do bitcoin na hora do deposito
-        bitcoinFinal   = str(float(bitCalcTemp/bitcoinInit))
-        print("\033[7;42mVALOR DO BITCOIN >>>\033[0m \033[1;42m ฿: ", bitcoinCurrent,"\033[0m\t", "\033[7;42mGANHO EM REAL >>>\033[0m \033[1;42m R$: ", bitcoinFinal[0:6],"\033[0m")
+        print("\033[7;42mVALOR DO BITCOIN >>>\033[0m \033[1;42m ฿: ", bitcoinCurrent,"\033[0m")
 
 # Tela de Splash
 print('''
