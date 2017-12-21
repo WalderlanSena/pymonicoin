@@ -1,4 +1,5 @@
 <h1 align="center">฿ Pymonicoin ฿</h1>
+<p align="center">:moneybag: :mag_right: Monitor the value of Bitcoin</p>
 <p align="center">
     <img src="https://github.com/WalderlanSena/tagsGit/blob/master/pymonicoin.svg">
     <img src="https://github.com/WalderlanSena/tagsGit/blob/master/licenseMIT.svg">
@@ -26,10 +27,11 @@
 
 
 <p align="center">
-    The <b> bit.log </ b> file that the software generates
+    The <b>bit.log</b> file that the software generates
     <img src="https://github.com/WalderlanSena/pymonicoin/blob/master/imgs/bitlog.png">
 </p>
 
 
 ## License
+
 <b>PyMonicoin</b> is open source software licensed under the <b>MIT license.</b>
