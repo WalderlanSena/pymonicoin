@@ -1,7 +1,7 @@
 #   Monitore o valor do Bitcoin nas Exchanges/ Monitor the value of Bitcoin
 #   developer: Walderlan Sena
 #   code: https://github.com/WalderlanSena/pymonicoin
-#   version: v1.1.0
+#   version: v1.2.0
 #   license: MIT license
 
 # Importando modulos 
@@ -13,6 +13,12 @@ from datetime import datetime
 # Setando a Exchange - FOX - ARN - B2U - BTD - FLW - LOC - MBT -NEG
 EXCHANGE  = "FOX"
 BTC_PRICE = "last"
+
+# Funcao que retorna data atual
+def returnDate():
+    hj = datetime.today()
+    data = str("[ ") + str(hj.day) + str("/") + str(hj.month) + str("/") + str(hj.year) + str(" ]")
+    return data
 
 # Funcao que retorna a hora atual do sistema
 def returnHour():
@@ -47,7 +53,7 @@ def request():
         # Escrevendo no arquivo de log
         with open('bit.log', 'a') as arq:
             # Escrevendo arquivo
-            arq.write("VALOR DO BITCOIN >>> " + str(bitcoinCurrent)  + "\tGANHO EM REAL >>> " + bitcoinFinal[0:6] + " " + returnHour() + "\n")
+            arq.write("VALOR DO BITCOIN >>> " + str(bitcoinCurrent)  + "\tGANHO EM REAL >>> " + bitcoinFinal[0:6] + " " + returnDate() + " " + returnHour() + "\n")
             # Fechando o arquivo cujo contem as informacoes de log
             arq.close()
         
@@ -62,7 +68,7 @@ def splash():
             | '_ \| | | | '_ ` _ \ / _ \| '_ \| |/ __/ _ \| | '_ \ 
             | |_) | |_| | | | | | | (_) | | | | | (_| (_) | | | | |
             | .__/ \__, |_| |_| |_|\___/|_| |_|_|\___\___/|_|_| |_|
-            | |     __/ |                                    v1.1.0      
+            | |     __/ |                                    v1.2.0      
             |_|    |___/
             \033[0m
                     >>> Monitor the value of Bitcoin <<< 
